@@ -55,6 +55,6 @@ def generate_image_from_plot():
     print("image file created at: " + file_dir + '\\' + file_name)
     plt.savefig(complete_file_path, format='png')
 
-
+print(plotcm.confusion_matrix)
 # generate_image_from_plot()
 plt.show()
