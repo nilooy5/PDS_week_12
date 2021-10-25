@@ -121,7 +121,7 @@ knn_fold.set("Select no. of folds")  # To have select no. of folds showing in
 
 # empty space of drop down by default.
 
-# This function will deal with the folds selcetd
+# This function will deal with the folds selected
 def selected_folds():
     output_folds = str(knn_fold.get())
     if output_folds != "Select no. of folds":
