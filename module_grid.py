@@ -88,8 +88,9 @@ def output(selected_dataset, selected_classifier, selected_fold):
     plotcm.ax_.set_title('Accuracy = {0:.2f}%'.format(accuracy))
     # To show the plot on screen
     plt.show()
-
     x_axis_parameter = list(parameter[0].values())[0]  # To assign values to x-axis
+    print(x_axis_parameter)     # same thing
+    print(parameter[0]['n_neighbors'])      # same thing
     y_axis_parameter = means  # to assign values to y-axis according to model and
     # calculation done above
     line_type = 'g--'  # to get green dashed line for plot
