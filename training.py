@@ -14,7 +14,7 @@ class_names = dataset.target_names
 
 X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.3, random_state=0)
 
-parameter = [{'n_neighbors': [1, 2, 3, 4, 5]}]
+parameter = [{'n_neighbors': range(30)}]
 
 knn_classifier = neighbors.KNeighborsClassifier()
 
