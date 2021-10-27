@@ -3,7 +3,7 @@ import tkinter as tk
 window = tk.Tk()
 window.title('Programming for Data Science')
 # width x height + x_offset + y_offset:
-window.geometry("700x250+100+100")
+window.geometry("1400x750+100+100")
 
 # Set font
 myFont = "Arial, 16"
@@ -64,7 +64,13 @@ def select_dataset():
 
 
 # Add button
-button = tk.Button(text="Run Model", fg="black", bg="lightblue", width=10, height=1, font=myFont, command=select_dataset)
+button = tk.Button(text="Run Model",
+                   fg="black",
+                   bg="lightblue",
+                   width=10,
+                   height=1,
+                   font=myFont,
+                   command=select_dataset)
 button.place(x=10, y=150)
 
 window.mainloop()

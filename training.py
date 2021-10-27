@@ -35,7 +35,7 @@ print("Grid scores on validation set:")
 print()
 
 for mean, std, param in zip(means, stds, results):
-    print("Parameter: %r, accuracy: %0.3f (+/-%0.03f)" % (param, mean, std*2))
+    print("Parameter: %r, accuracy: %0.3f (+/-%0.03f)" % (param, mean, std * 2))
 print()
 print("Best parameter:", gscv_classifier.best_params_)
 
@@ -47,13 +47,13 @@ plotcm.ax_.set_title('Accuracy = {0:.2f}%'.format(accuracy))
 
 
 def generate_image_from_plot():
-
     file_name = "myplot.png"
     file_dir = str(Path.home())
     # completeName = os.path.join(file_dir, file_name)
     complete_file_path = file_dir + '\\' + file_name
     print("image file created at: " + file_dir + '\\' + file_name)
     plt.savefig(complete_file_path, format='png')
+
 
 print(plotcm.confusion_matrix)
 # generate_image_from_plot()
